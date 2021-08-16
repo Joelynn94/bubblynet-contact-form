@@ -4,7 +4,7 @@ import "./index.css";
 
 function App() {
   return (
-    <div className="App">
+    <div className="container">
       <h1 className="mb-4">Contact Form</h1>
       <ContactForm />
     </div>
