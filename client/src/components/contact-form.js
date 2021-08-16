@@ -36,7 +36,18 @@ function ContactForm() {
 
     axios
       .post("https://sparky-bubblynet.herokuapp.com/api/send", userSubmission)
-      .then((data) => console.log(data))
+      .then((data) => {
+        if (data) {
+          setFormData({
+            email: "",
+            subject: "",
+            name: "",
+            deployedLink: "",
+            githubLink: "",
+            message: "",
+          });
+        }
+      })
       .catch((error) => console.error(error));
   }
 
