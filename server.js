@@ -31,7 +31,7 @@ app.post("/api/send", (req, res) => {
       <p><strong>From:</strong> ${name}</p>
       <p><strong>Email:</strong> ${email}</p>
       <p><strong>Github Link:</strong> <a href=${githubLink} target="_blank">${githubLink}</a></p>
-      <p><strong>Deployed Link:</strong> <a href=${githubLink} target="_blank">${deployedLink}</a></p>`,
+      <p><strong>Deployed Link:</strong> <a href=${deployedLink} target="_blank">${deployedLink}</a></p>`,
     };
     sgMail
       .send(msg)
